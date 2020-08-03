@@ -69,13 +69,7 @@ class Project extends React.Component {
             disableTypography="true"
             title={
               <Typography component="h2">
-                <a
-                  href={data.homeUrl}
-                  className="github-project__link"
-                  target="_blank"
-                >
-                  {data.name}
-                </a>
+                <a className="github-project__link">{data.name}</a>
               </Typography>
             }
             subheader={
