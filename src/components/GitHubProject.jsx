@@ -2,7 +2,7 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { CardHeader } from "@material-ui/core";
+import { CardHeader, CardActionArea } from "@material-ui/core";
 
 const API = "https://api.github.com/repos";
 
@@ -60,36 +60,42 @@ class Project extends React.Component {
 
     return (
       <Card className="github-project__card">
-        <CardHeader
-          disableTypography="true"
-          title={
-            <Typography component="h2">
-              <a
-                href={data.homeUrl}
-                className="github-project__link"
-                target="_blank"
-              >
-                {data.name}
-              </a>
-            </Typography>
-          }
-          subheader={
-            <div className="github-project__info">
-              <Typography className="github-project__data">
-                Watchers: {data.watchers}
+        <CardActionArea
+          href={data.homeUrl}
+          target="_blank"
+          className="github-project__fill"
+        >
+          <CardHeader
+            disableTypography="true"
+            title={
+              <Typography component="h2">
+                <a
+                  href={data.homeUrl}
+                  className="github-project__link"
+                  target="_blank"
+                >
+                  {data.name}
+                </a>
               </Typography>
-              <Typography className="github-project__data">
-                Stars: {data.stars}
-              </Typography>
-              <Typography className="github-project__data">
-                Forks: {data.forks}
-              </Typography>
-            </div>
-          }
-        />
-        <CardContent>
-          <Typography>{data.description}</Typography>
-        </CardContent>
+            }
+            subheader={
+              <div className="github-project__info">
+                <Typography className="github-project__data">
+                  Watchers: {data.watchers}
+                </Typography>
+                <Typography className="github-project__data">
+                  Stars: {data.stars}
+                </Typography>
+                <Typography className="github-project__data">
+                  Forks: {data.forks}
+                </Typography>
+              </div>
+            }
+          />
+          <CardContent>
+            <Typography>{data.description}</Typography>
+          </CardContent>
+        </CardActionArea>
       </Card>
     );
   }

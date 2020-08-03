@@ -450,6 +450,12 @@ header {
     margin: 1em;
 }
 
+.github-project__fill,
+.github-profile__fill {
+    height: 100%;
+    width: 100%;
+}
+
 .github-profile__image {
     height: 150px;
     width: 150px;

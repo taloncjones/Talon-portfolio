@@ -60,7 +60,11 @@ class Profile extends React.Component {
 
     return (
       <Card className="github-profile__card">
-        <CardActionArea href={data.homeUrl} target="_blank">
+        <CardActionArea
+          href={data.homeUrl}
+          target="_blank"
+          className="github-profile__fill"
+        >
           <CardContent>
             <CardMedia className="github-profile__image" image={data.avatar} />
             <Typography component="h2">
