@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/TJ_Logo@2x.png";
+import Resume from "../resources/20200731_TalonJones_Resume.pdf";
 
 function NavBar() {
   const navLinks = document.querySelectorAll(".nav__link");
@@ -44,6 +45,16 @@ function NavBar() {
           <li className="nav__item">
             <a href="#work" className="nav__link" onClick={closeDrawer}>
               My Work
+            </a>
+          </li>
+          <li className="nav__item">
+            <a
+              href={Resume}
+              className="nav__link"
+              target="_blank"
+              onClick={closeDrawer}
+            >
+              My Resume
             </a>
           </li>
           <footer className="footer nav__nobackground">
