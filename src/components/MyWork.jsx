@@ -12,6 +12,7 @@ function MyWork() {
 
       <div className="portfolio">
         <ProfileCard username="taloncjones" />
+        <ProjectCard username="taloncjones" repo="Talon-portfolio" />
         <ProjectCard username="taloncjones" repo="Mini_TTV" />
         <ProjectCard username="taloncjones" repo="Pathfinding-Visualizer" />
         <ProjectCard username="taloncjones" repo="LinuxCatalog" />
