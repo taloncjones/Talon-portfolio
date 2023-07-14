@@ -1,10 +1,9 @@
 import React from "react";
 import logo from "../img/TJ_Logo@2x.png";
-import Resume from "../resources/20200731_TalonJones_Resume.pdf";
+import EverCharge from "../resources/May 2022 - April 2023 Performance Review.pdf";
+import Resume from "../resources/2023_TalonJones_resume.pdf";
 
 function NavBar() {
-  const navLinks = document.querySelectorAll(".nav__link");
-
   function handleClick(e) {
     document.body.classList.toggle("nav-open");
   }
@@ -48,12 +47,12 @@ function NavBar() {
             </a>
           </li>
           <li className="nav__item">
-            <a
-              href={Resume}
-              className="nav__link"
-              target="_blank"
-              onClick={closeDrawer}
-            >
+            <a href={EverCharge} className="nav__link" onClick={closeDrawer}>
+              EverCharge - Performance Review
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href={Resume} className="nav__link" onClick={closeDrawer}>
               My Resume
             </a>
           </li>

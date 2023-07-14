@@ -1,5 +1,5 @@
 import React from "react";
-import profile_pic from "../img/IMG_6184_sq-crop.png";
+import profile_pic from "../img/Talon-Profile-cropped.jpeg";
 
 function Intro() {
   return (
@@ -7,9 +7,7 @@ function Intro() {
       <h1 className="section__title section__title--intro">
         Hi, I am <strong>Talon Jones</strong>
       </h1>
-      <p className="section__subtitle section__subtitle--intro">
-        Software Engineer
-      </p>
+      <p className="section__subtitle section__subtitle--intro">QA, Dev, TPM</p>
       <img src={profile_pic} alt="Talon Jones" className="intro__img" />
     </section>
   );

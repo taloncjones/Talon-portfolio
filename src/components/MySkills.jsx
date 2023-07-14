@@ -49,14 +49,14 @@ function MySkills() {
 
         <div className="skill">
           <h3>Languages</h3>
-          <p>Python, HTML, JavaScript, CSS, Bash</p>
+          <p>Python, HTML, JavaScript</p>
           <h3>Frameworks/Tools</h3>
-          <p>
-            React, Flask, SQLAlchemy, MaterialUI, PostgreSQL, Git, Selenium,
-            Tkinter
-          </p>
+          <p>React, PostgreSQL, Selenium, Cypress, Cucumber</p>
           <h3>Misc.</h3>
-          <p>REST, APIs, TCP/IP, JIRA, TestLink, Project Management, CI/CD</p>
+          <p>
+            OCPP, RESTful APIs, TCP/IP, JIRA, TestLink, TestRail, Xray, Project
+            Management
+          </p>
         </div>
       </div>
 
